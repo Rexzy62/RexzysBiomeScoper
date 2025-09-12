@@ -50,7 +50,8 @@ Startfunc(*) {
 	myGui.Show()
     return
     }}
-    Run("\main.pyw")
+    Run(A_ScriptDir "\main.pyw")
     
     ExitApp()
+
 }
