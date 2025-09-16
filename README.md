@@ -1,9 +1,6 @@
 # RexzysBiomeScoper
 RexzysBiomeScoper - A Versatile Lightweight Biome Scoper for Sols Rng.
-
-# Roblox Biome Detector & Discord Notifier
-
-This Python script monitors Roblox log files for specific biome detection events from BloxstrapRPC and sends these notifications, along with a link to the game server, directly to a Discord webhook.
+This Python script monitors Roblox log files for specific biome detection events from the Bloxstrap RPC and sends these notifications, along with a link to the game server (Toggleable), directly to a Discord webhook.
 
 ## Features
 
