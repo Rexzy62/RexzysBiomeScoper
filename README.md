@@ -39,50 +39,23 @@ pip install requests keyboard
 
 ## Setup
 
-1.  **Create `config.ini`:**
-    In the same directory as your `main.pyw` script, create a file named `config.ini`. This file will store your Discord webhook URL and the Roblox private server link.
+1.  **Open `RUNTHIS.ahk`:**
+    In the same directory as your `main.py` script, open up the File Called `RUNTHIS.ahk` this has the most Basic of Settings.
 
-    ```ini
-    [Main]
-    WebhookLink=YOUR_DISCORD_WEBHOOK_URL_HERE
-    PSLink=YOUR_ROBLOX_PRIVATE_SERVER_LINK_HERE
-    ```
+2.  **Ensure Bloxstrap is Running:**
+    This script relies on Bloxstrap to write specific presence data to the Roblox logs. Make sure Bloxstrap is active and configured correctly.
 
-    * **`WebhookLink`**: Replace `YOUR_DISCORD_WEBHOOK_URL_HERE` with your actual Discord webhook URL. You can create one in your Discord server settings under `Integrations -> Webhooks`.
-    * **`PSLink`**: Replace `YOUR_ROBLOX_PRIVATE_SERVER_LINK_HERE` with the private server link you want to include in the Discord embeds. This is typically a Roblox game link followed by `?privateServerLinkCode=...`.
+3. **Setup your Settings:**
+    The Config is still Empty and **WILL NOT** work since the Biome Config isnt Setup so open up `Edit.pyw` (via `RUNTHIS.ahk` or the File Explorer) and Setup Everything.
 
-2.  **Ensure BloxstrapRPC is Running:**
-    This script relies on BloxstrapRPC to write specific presence data to the Roblox logs. Make sure BloxstrapRPC is active and configured correctly.
-
----
-
-## How to Run
-
-Navigate to the directory containing your script and `config.ini` in your command prompt or PowerShell.
-
-```bash
-cd path\to\YOUR_PROJECT_FOLDER
-```
-
-Then execute the script using Python:
-
-```bash
-python main.pyw
-```
-
-**Note:** The `keyboard` library might require the script to be run with **administrative privileges** (Run as Administrator) to detect global hotkeys like `F2` properly, especially on Windows.
-
----
-
-## Stopping the Script
-
-To gracefully stop the script at any time, simply press the `F2` key. The script will detect this and shut down.
+4. **Running the Script**
+    Simply go into `RUNTHIS.ahk` and Use the Start Button! (to stop the script press F2!).
 
 ---
 
 ## Troubleshooting
 
-* **`SyntaxError: invalid syntax` on line 1 when running:** This usually means you're trying to run the script incorrectly. Ensure you're using `python main.pyw` in your command line, not including symbols like `&` unless specifically in PowerShell with correct syntax.
+* **`SyntaxError: invalid syntax` on line 1 when running:** This usually means you're trying to run the script incorrectly. Ensure you're using `python main.py` in your command line, not including symbols like `&` unless specifically in PowerShell with correct syntax (this only Applies when Starting the `main.py` via powershell which i dont recommend).
 * **"Config file NOT found" error:** Double-check that your `config.ini` file is in the *same directory* as `main.pyw`. Ensure it's spelled `config.ini` exactly.
 * **"Section '[Main]' not found" or "Key 'WebhookLink' not found" errors:** Verify that your `config.ini` has the `[Main]` section header and that `WebhookLink=` and `PSLink=` are correctly written within that section, with an equals sign separating the key and its value.
 * **Webhook not sending / Link not appearing:**
