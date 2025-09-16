@@ -9,8 +9,8 @@ This Python script monitors Roblox log files for specific biome detection events
 * **Discord Webhook Integration:** Sends embeds to Discord.
 * **Timestamped Notifications:** Each Discord notification includes the time the biome was detected.
 * **Player Server Link:** Includes a clickable "Join Server" link in the Discord embed, pulled from your configuration.
-* **EasyExit:** Easily stop the script by pressing the `F2` key.
-* **Dynamic Log Switching:** Automatically switches to the newest log file if Roblox creates a new one (e.g., after a new game session).
+* **EasyExit:** Stop the script by pressing the `F2` key.
+* **Log Switching:** Automatically switches to the newest log file if Roblox creates a new one (e.g., after a new game session).
 
 ---
 
