@@ -150,7 +150,7 @@ biomes_frame.grid_rowconfigure(1, weight=1)
 
 # Send Message On
 ttk.Label(biomes_frame, text="Send Message on").pack(pady=(5, 0))
-biome_options = ["NORMAL", "SNOWY", "RAINY", "SANDSTORM", "STARFALL", "CORUPPTION", "NULL", "GLITCHED", "DREAMSPACE"]
+biome_options = ["NORMAL", "WINDY" ,"SNOWY", "RAINY", "SANDSTORM", "STARFALL", "CORUPPTION", "NULL", "GLITCHED", "DREAMSPACE", "GRAVEYARD", "BLOODRAIN", "PUMPKIN MOON"]
 send_message_dropdown = MultiSelectDropdown(biomes_frame, options=biome_options)
 send_message_dropdown.pack(padx=10, pady=5, fill='x', expand=True)
 
@@ -189,6 +189,7 @@ send_message_dropdown.set_selected(initial_settings.get('EnableOnThisBiome', [])
 ping_dropdown.set_selected(initial_settings.get('PingOnThisBiome', []))
 enable_aura_var.set(initial_settings.get('StatusEnabled', False))
 enable_emojis_var.set(initial_settings.get('EmojiEnabled', False))
+
 
 
 root.mainloop()
