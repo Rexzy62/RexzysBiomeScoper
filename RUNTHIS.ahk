@@ -6,7 +6,7 @@ Dependenciesinstalled := 0
 Dependenciesinstalled := IniRead(A_ScriptDir "\config.ini", "Main", "DependenciesInstalled", 0)
 
 if TutorialCompleted = 0{
-    MsgBox("This Tutorial will Show you the Steps of Setting up the Biome Scoper.`n`n(This message was shown since `"TutorialCompleted`" was 0 or NOT FOUND)", "First Time Boot", "4160")
+    MsgBox("This Tutorial will Show you the Steps of Setting up the Biome Scoper.`n`n(This message was shown since `"TutorialCompleted`" was 0 or not found)", "First Time Boot", "4160")
 }
 
 myGui := Gui()
@@ -40,10 +40,10 @@ myGui := Gui()
     myGui.Show()
 
     if +TutorialCompleted = 0{
-    MsgBox("This is the Main GUI Here you Can Setup the Basic Serttings!`n`nSettings Include`n- Webhook Link`n- Private Server Link`n- Discord User ID`n`nMost of these Features are Recommended to have filled out.`n`n(This message was shown since `"TutorialCompleted`" was 0 or NOT FOUND)", "First Time Boot", "4160")
+    MsgBox("This is the Main GUI Here you Can Setup the Basic Serttings!`n`nSettings Include`n- Webhook Link`n- Private Server Link`n- Discord User ID`n`nMost of these Features are Recommended to have filled out.", "First Time Boot", "4160")
     }
     if TutorialCompleted = 0{
-        MsgBox("Basic Info`n`nThe Script is Started via the Start Button and is Stopped Via F2.`n`nThere is also a Seperate Config Tab Go Check it out!`n(This Will be the Final Tutorial Message)`n`n(This message was shown since `"TutorialCompleted`" was 0 or NOT FOUND)", "First Time Boot", "4160")
+        MsgBox("Basic Info`n`nThe Script is Started via the Start Button and is Stopped Via F2.`n`nThere is also a Seperate Config Tab Go Check it out!", "First Time Boot", "4160")
         TutorialCompleted := 1
         IniWrite(TutorialCompleted, A_ScriptDir "\config.ini", "Main", "TutorialCompleted")
         Run(A_ScriptDir "\Edit.pyw")
@@ -79,3 +79,4 @@ Startfunc(*) {
     
     myGui.Hide()
 }
+
